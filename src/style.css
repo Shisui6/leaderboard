@@ -1,7 +1,72 @@
-body {
-  background-color: bisque;
+* {
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
 }
 
-.hello {
-  color: red;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 65px;
+  margin-left: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.score-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 115px;
+  gap: 100px;
+}
+
+.score-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.score-header button {
+  padding: 5px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.scores {
+  border: 3.5px solid black;
+}
+
+.scores :nth-child(even) {
+  background-color: #dfdfdf;
+}
+
+.scores p {
+  margin: 0;
+  padding: 5px;
+}
+
+form {
+  width: 47%;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+#submit-btn {
+  float: right;
+  padding: 5px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
