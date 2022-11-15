@@ -1,7 +1,14 @@
-# Webpack config
+# Leaderbord
 
-> A template repository for for setting up webpack and linters
+> The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
+## Built With
+
+- HTML
+- CSS
+- Javascript
+- Webpack
+  
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
@@ -22,6 +29,10 @@ To get a local copy up and running follow these simple steps.
 
 - `npm run build` - Builds development files into production code
 - `npm start` - Starts the development server
+
+### Deployment
+
+- [Live Demo Link](https://shisui6.github.io/leaderboard/dist/)
 
 ## Authors
 
