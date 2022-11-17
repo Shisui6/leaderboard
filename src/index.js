@@ -1,16 +1,37 @@
 import './style.css';
 
-const BASE_URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
+const URL = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${process.env.API_KEY}/scores/`;
+
+// Get relevant elements from the DOM
+const form = document.querySelector('form');
+const name = document.getElementById('name');
+const score = document.getElementById('score');
+const scores = document.getElementById('scores');
+const refreshBtn = document.getElementById('refresh');
 
 const refresh = async () => {
   try {
-    const response = await fetch(`${BASE_URL}games/${process.env.API_KEY}/scores/`);
+    const response = await fetch(URL);
     if (response.ok) {
       const json = await response.json();
-      console.log(json);
+      const sortedScores = json.result.sort((s1, s2) => {
+        if (s1.score < s2.score) {
+          return 1;
+        }
+        if (s1.score > s2.score) {
+          return -1;
+        }
+
+        return 0;
+      });
+      sortedScores.forEach((item) => {
+        const scoreElement = document.createElement('p');
+        scoreElement.textContent = `${item.user}: ${item.score}`;
+        scores.appendChild(scoreElement);
+      });
     }
   } catch (error) {
-    console.log(error);
+    throw new Error(error);
   }
 };
 
@@ -21,15 +42,25 @@ const save = async (user, score) => {
   });
 
   try {
-    const response = await fetch(`${BASE_URL}games/${process.env.API_KEY}/scores/`, {
+    await fetch(URL, {
       method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
       body: data,
     });
-    if (response.ok) {
-      const json = await response.json();
-      console.log(json);
-    }
   } catch (error) {
-    console.log(error);
+    throw new Error(error);
   }
 };
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  save(name.value, score.value);
+  form.reset();
+});
+
+refreshBtn.addEventListener('click', () => {
+  scores.innerHTML = '';
+  refresh();
+});
+
+refresh();

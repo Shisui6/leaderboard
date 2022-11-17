@@ -38,15 +38,15 @@ h2 {
   border-radius: 5px;
 }
 
-.scores {
+#scores {
   border: 3.5px solid black;
 }
 
-.scores :nth-child(even) {
+#scores :nth-child(even) {
   background-color: #dfdfdf;
 }
 
-.scores p {
+#scores p {
   margin: 0;
   padding: 5px;
 }
