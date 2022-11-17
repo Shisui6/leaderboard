@@ -1,4 +1,4 @@
-# Leaderbord
+# Leaderboard
 
 > The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
@@ -31,8 +31,10 @@ To get a local copy up and running follow these simple steps.
 - `npm start` - Starts the development server
 
 ### API Instructions
+
 Instructions to setup API key are as follows:
-- Create a new game with the name of your choice using ` curl -X POST -d 'name=nameOfGame' https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ `
+
+- Create a new game with the name of your choice on your command line using ` curl -X POST -d 'name=nameOfGame' https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ `
 - Add the returned API key to a `.env` file in your root directory using `API_KEY=returnedApiKey`
 - Note: make sure to replace `nameOfGame` and `returnedApiKey` with the name of the game you want to create and your API key
 
