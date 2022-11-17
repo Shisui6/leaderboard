@@ -10,7 +10,7 @@ const scores = document.getElementById('scores');
 const refreshBtn = document.getElementById('refresh');
 
 // Call refresh function on page load to display leaderboard scores
-refresh();
+// refresh();
 
 // Add event listener to form to call the save function with form input on submit
 form.addEventListener('submit', (e) => {
