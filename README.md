@@ -40,7 +40,7 @@ Instructions to setup API key are as follows:
 
 ### Deployment
 
-- [Live Demo Link](https://shisui6.github.io/leaderboard/dist/)
+- [Live Demo Link](https://shisui6.github.io/leaderboard)
 
 ## Authors
 
