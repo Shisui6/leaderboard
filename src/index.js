@@ -8,6 +8,7 @@ const name = document.getElementById('name');
 const score = document.getElementById('score');
 const scores = document.getElementById('scores');
 const refreshBtn = document.getElementById('refresh');
+const success = document.getElementById('success');
 
 // Call refresh function on page load to display leaderboard scores
 // refresh();
@@ -15,8 +16,12 @@ const refreshBtn = document.getElementById('refresh');
 // Add event listener to form to call the save function with form input on submit
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  save(name.value, score.value);
+  // save(name.value, score.value);
   form.reset();
+  success.classList.toggle('hide');
+  setTimeout(() => {
+    success.classList.toggle('hide');
+  }, 2500);
 });
 
 // Add event listener to refresh button to call the refresh function

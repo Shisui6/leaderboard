@@ -19,7 +19,29 @@
 					<button id="refresh" class="white"><i class="fa-solid fa-arrows-rotate fa-2x"></i></button>
 				</div>
 				<div id="scores">
-					<div class="score">
+					<!-- <div class="empty">
+						<img src="./images/trophy.png" alt="trophy">
+						<p>No scores yet. <br> Add a new score to see it here</p>
+					</div> -->
+					<div id="skeleton-loader" class="hide">
+						<div class="skeleton-cont">
+							<div class="skeleton skeleton-image"></div>
+							<div class="skeleton skeleton-text"></div>
+						</div>
+						<div class="skeleton-cont">
+							<div class="skeleton skeleton-image"></div>
+							<div class="skeleton skeleton-text"></div>
+						</div>
+						<div class="skeleton-cont">
+							<div class="skeleton skeleton-image"></div>
+							<div class="skeleton skeleton-text"></div>
+						</div>
+						<div class="skeleton-cont">
+							<div class="skeleton skeleton-image"></div>
+							<div class="skeleton skeleton-text"></div>
+						</div>
+					</div>
+					<!-- <div class="score">
 						<span>1</span>
 						<img src="./images/profile1.png" alt="profile">
 						<p class="user">Shisui</p>
@@ -42,15 +64,16 @@
 						<img src="./images/profile4.png" alt="profile">
 						<p class="user">Madara</p>
 						<p class="score-number">88</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
       <div class="form-cont">
+				<div class="hide" id="success">Score added Successfully</div>
 				<img src="./images/score.png" alt="scorecard">
 				<h2>New Score</h2>
 				<form action="#">
 					<input type="text" id="name" placeholder="Your name" required>
-					<input type="text" id="score" placeholder="Your score" required>
+					<input type="number" min="1" id="score" placeholder="Your score" required>
 					<button type="submit" id="submit-btn">Submit</button>
 				</form>
 			</div>

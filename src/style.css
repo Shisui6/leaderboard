@@ -68,8 +68,23 @@ h2 {
   transform: rotate(180deg);
 }
 
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 320px;
+  text-align: center;
+}
+
+.empty img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
 #scores {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
   border-radius: 35px;
   padding: 20px;
   height: 370px;
@@ -96,6 +111,40 @@ h2 {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.skeleton {
+  opacity: 0.7;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+.skeleton-cont {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skeleton-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.skeleton-text {
+  width: 80%;
+  height: 20px;
+  border-radius: 15px;
 }
 
 .score {
@@ -129,6 +178,30 @@ h2 {
 .form-cont {
   text-align: center;
   padding: 70px 100px 0;
+}
+
+#success {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  background-color: #aeeabc;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  opacity: 0;
+  animation: fadeIn 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+.hide {
+  display: none;
 }
 
 .form-cont img {
