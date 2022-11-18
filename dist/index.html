@@ -5,27 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/e83d856101.js" crossorigin="anonymous"></script>
     <title>Leaderboard</title>
   <script defer src="main.js"></script></head>
   <body>
-    <h1>Leaderboard</h1>
+		<!-- Main title -->
+    <h1><span class="white">Subway</span> Surfers</h1>
+		<!-- Grid container -->
     <div class="score-cont">
       <div>
+				<!-- Leaderboard header -->
 				<div class="score-header">
-					<h2>Recent Scores</h2>
-					<button id="refresh">Refresh</button>
+					<h2 class="white">Leaderboard</h2>
+					<button id="refresh" class="white"><i class="fa-solid fa-arrows-rotate fa-2x"></i></button>
 				</div>
-				<div id="scores"></div>
+				<!-- Leaderboard content -->
+				<div class="leaderboard">
+					<!-- Empty div -->
+					<div id="empty-id" class="empty">
+						<img id="trophy" alt="trophy">
+						<p>No scores yet. <br> Add a new score to see it here</p>
+					</div>
+					<!-- Loading skeleton -->
+					<div id="skeleton-loader" class="hide">
+						<div class="skeleton-cont">
+							<div class="skeleton skeleton-image"></div>
+							<div class="skeleton skeleton-text"></div>
+						</div>
+						<div class="skeleton-cont">
+							<div class="skeleton skeleton-image"></div>
+							<div class="skeleton skeleton-text"></div>
+						</div>
+						<div class="skeleton-cont">
+							<div class="skeleton skeleton-image"></div>
+							<div class="skeleton skeleton-text"></div>
+						</div>
+						<div class="skeleton-cont">
+							<div class="skeleton skeleton-image"></div>
+							<div class="skeleton skeleton-text"></div>
+						</div>
+					</div>
+					<!-- Scores container -->
+					<div id="scores"></div>
+				</div>
 			</div>
-      <div>
-				<h2>Add your score</h2>
+			<!-- Form container -->
+      <div class="form-cont">
+				<div class="hide" id="success">Score added Successfully</div>
+				<img alt="scorecard" id="scorecard">
+				<h2>New Score</h2>
 				<form action="#">
 					<input type="text" id="name" placeholder="Your name" required>
-					<input type="text" id="score" placeholder="Your score" required>
+					<input type="number" min="1" max="99" id="score" placeholder="Your score" required>
 					<button type="submit" id="submit-btn">Submit</button>
 				</form>
 			</div>
     </div>
+		<!-- Footer -->
+		<footer>
+			<p><span class="white">Copyright &copy 2022 All rights reserved</span></p>
+			<p>A project by Okemdi Udeh</p>
+		</footer>
   </body>
 </html>

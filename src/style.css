@@ -1,72 +1,248 @@
+/* All */
 * {
   box-sizing: border-box;
-  font-family: 'Merriweather', serif;
+  font-family: 'Sono', sans-serif;
 }
 
+/* Body */
 body {
   margin: 0;
   padding: 0;
+  background:
+    linear-gradient(
+      to right,
+      #1e0253 0%,
+      #631447 50%,
+      #fff 50%,
+      #fff 100%
+    );
 }
 
 h1 {
-  font-size: 65px;
-  margin-left: 50px;
+  width: 90%;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  left: 75px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #fff;
+}
+
+/* Main grid */
 .score-cont {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 115px;
+  padding: 0 80px;
   gap: 100px;
 }
 
+/* Leaderboard Section */
 .score-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.score-header button {
+#refresh {
+  position: relative;
+  top: 5px;
   padding: 5px 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background: none;
+  border: none;
   cursor: pointer;
-  border-radius: 5px;
+  -moz-transition: all 0.8s linear;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
 }
 
-#scores {
-  border: 3.5px solid black;
+#refresh.down {
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
-#scores :nth-child(even) {
-  background-color: #dfdfdf;
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 320px;
+  text-align: center;
 }
 
-#scores p {
-  margin: 0;
-  padding: 5px;
+.empty img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
 }
 
-form {
-  width: 47%;
+.leaderboard {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  padding: 20px;
+  height: 370px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dcdcdc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Loading skeleton */
+.skeleton {
+  opacity: 0.7;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+.skeleton-cont {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skeleton-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.skeleton-text {
+  width: 80%;
+  height: 20px;
+  border-radius: 15px;
+}
+
+/* Form Section */
+.score {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+}
+
+.score span {
+  margin-right: 15px;
+}
+
+.profile {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.user {
+  width: 60%;
+  margin-right: 30px;
+  font-weight: 700;
+}
+
+.score-number {
+  font-weight: 700;
+  color: #10121f;
+}
+
+.form-cont {
+  text-align: center;
+  padding: 70px 100px 0;
+}
+
+#success {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  background-color: #aeeabc;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  opacity: 0;
+  animation: fadeIn 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+#scorecard {
+  height: 50px;
+  width: 50px;
 }
 
 input {
   width: 100%;
   margin-bottom: 25px;
-  padding: 5px;
-  border: 2px solid black;
+  border: none;
+  background-color: #ededed;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 #submit-btn {
-  float: right;
-  padding: 5px 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background: none;
+  padding: 8px 20px;
+  background-color: #1e0253;
+  color: #fff;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 15px;
+  border: none;
+  transition: 0.3s;
+}
+
+#submit-btn:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 200px;
+  padding-left: 160px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
 }
