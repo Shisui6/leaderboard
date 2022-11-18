@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\n  box-sizing: border-box;\\r\\n  font-family: 'Merriweather', serif;\\r\\n}\\r\\n\\r\\nbody {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n}\\r\\n\\r\\nh1 {\\r\\n  font-size: 65px;\\r\\n  margin-left: 50px;\\r\\n}\\r\\n\\r\\nh2 {\\r\\n  font-size: 30px;\\r\\n}\\r\\n\\r\\n.score-cont {\\r\\n  display: grid;\\r\\n  grid-template-columns: 1fr 1fr;\\r\\n  padding: 0 115px;\\r\\n  gap: 100px;\\r\\n}\\r\\n\\r\\n.score-header {\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\n.score-header button {\\r\\n  padding: 5px 15px;\\r\\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\\r\\n  background: none;\\r\\n  cursor: pointer;\\r\\n  border-radius: 5px;\\r\\n}\\r\\n\\r\\n#scores {\\r\\n  border: 3.5px solid black;\\r\\n}\\r\\n\\r\\n#scores :nth-child(even) {\\r\\n  background-color: #dfdfdf;\\r\\n}\\r\\n\\r\\n#scores p {\\r\\n  margin: 0;\\r\\n  padding: 5px;\\r\\n}\\r\\n\\r\\nform {\\r\\n  width: 47%;\\r\\n}\\r\\n\\r\\ninput {\\r\\n  width: 100%;\\r\\n  margin-bottom: 25px;\\r\\n  padding: 5px;\\r\\n  border: 2px solid black;\\r\\n}\\r\\n\\r\\n#submit-btn {\\r\\n  float: right;\\r\\n  padding: 5px 15px;\\r\\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\\r\\n  background: none;\\r\\n  cursor: pointer;\\r\\n  border-radius: 5px;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-config/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"/* All */\\r\\n* {\\r\\n  box-sizing: border-box;\\r\\n  font-family: 'Sono', sans-serif;\\r\\n}\\r\\n\\r\\n/* Body */\\r\\nbody {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n  background:\\r\\n    linear-gradient(\\r\\n      to right,\\r\\n      #1e0253 0%,\\r\\n      #631447 50%,\\r\\n      #fff 50%,\\r\\n      #fff 100%\\r\\n    );\\r\\n}\\r\\n\\r\\nh1 {\\r\\n  width: 90%;\\r\\n  font-size: 50px;\\r\\n  text-align: center;\\r\\n  position: relative;\\r\\n  left: 75px;\\r\\n}\\r\\n\\r\\nh2 {\\r\\n  font-size: 25px;\\r\\n}\\r\\n\\r\\n.white {\\r\\n  color: #fff;\\r\\n}\\r\\n\\r\\n.black {\\r\\n  color: #fff;\\r\\n}\\r\\n\\r\\n/* Main grid */\\r\\n.score-cont {\\r\\n  display: grid;\\r\\n  grid-template-columns: 1fr 1fr;\\r\\n  padding: 0 80px;\\r\\n  gap: 100px;\\r\\n}\\r\\n\\r\\n/* Leaderboard Section */\\r\\n.score-header {\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\n#refresh {\\r\\n  position: relative;\\r\\n  top: 5px;\\r\\n  padding: 5px 15px;\\r\\n  background: none;\\r\\n  border: none;\\r\\n  cursor: pointer;\\r\\n  -moz-transition: all 0.8s linear;\\r\\n  -webkit-transition: all 0.8s linear;\\r\\n  transition: all 0.8s linear;\\r\\n}\\r\\n\\r\\n#refresh.down {\\r\\n  -ms-transform: rotate(180deg);\\r\\n  -moz-transform: rotate(180deg);\\r\\n  -webkit-transform: rotate(180deg);\\r\\n  transform: rotate(180deg);\\r\\n}\\r\\n\\r\\n.empty {\\r\\n  display: flex;\\r\\n  justify-content: center;\\r\\n  align-items: center;\\r\\n  flex-direction: column;\\r\\n  height: 320px;\\r\\n  text-align: center;\\r\\n}\\r\\n\\r\\n.empty img {\\r\\n  height: 100px;\\r\\n  width: 100px;\\r\\n  margin-bottom: 10px;\\r\\n}\\r\\n\\r\\n.leaderboard {\\r\\n  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);\\r\\n  border-radius: 35px;\\r\\n  padding: 20px;\\r\\n  height: 370px;\\r\\n  background-color: #fff;\\r\\n  overflow-y: auto;\\r\\n}\\r\\n\\r\\n/* Scrollbar */\\r\\n::-webkit-scrollbar {\\r\\n  width: 10px;\\r\\n}\\r\\n\\r\\n::-webkit-scrollbar-track {\\r\\n  background: none;\\r\\n}\\r\\n\\r\\n::-webkit-scrollbar-thumb {\\r\\n  background: #dcdcdc;\\r\\n  border-radius: 10px;\\r\\n}\\r\\n\\r\\n::-webkit-scrollbar-thumb:hover {\\r\\n  background: #555;\\r\\n}\\r\\n\\r\\n/* Loading skeleton */\\r\\n.skeleton {\\r\\n  opacity: 0.7;\\r\\n  animation: skeleton-loading 1s linear infinite alternate;\\r\\n}\\r\\n\\r\\n@keyframes skeleton-loading {\\r\\n  0% {\\r\\n    background-color: hsl(200, 20%, 70%);\\r\\n  }\\r\\n\\r\\n  100% {\\r\\n    background-color: hsl(200, 20%, 95%);\\r\\n  }\\r\\n}\\r\\n\\r\\n.skeleton-cont {\\r\\n  padding: 10px;\\r\\n  display: flex;\\r\\n  justify-content: space-around;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\n.skeleton-image {\\r\\n  width: 50px;\\r\\n  height: 50px;\\r\\n  border-radius: 100%;\\r\\n}\\r\\n\\r\\n.skeleton-text {\\r\\n  width: 80%;\\r\\n  height: 20px;\\r\\n  border-radius: 15px;\\r\\n}\\r\\n\\r\\n/* Form Section */\\r\\n.score {\\r\\n  display: flex;\\r\\n  align-items: center;\\r\\n  padding: 10px 5px;\\r\\n  border-bottom: 1px solid rgba(204, 204, 204, 0.5);\\r\\n}\\r\\n\\r\\n.score span {\\r\\n  margin-right: 15px;\\r\\n}\\r\\n\\r\\n.profile {\\r\\n  height: 50px;\\r\\n  width: 50px;\\r\\n  margin-right: 20px;\\r\\n}\\r\\n\\r\\n.user {\\r\\n  width: 60%;\\r\\n  margin-right: 30px;\\r\\n  font-weight: 700;\\r\\n}\\r\\n\\r\\n.score-number {\\r\\n  font-weight: 700;\\r\\n  color: #10121f;\\r\\n}\\r\\n\\r\\n.form-cont {\\r\\n  text-align: center;\\r\\n  padding: 70px 100px 0;\\r\\n}\\r\\n\\r\\n#success {\\r\\n  width: 75%;\\r\\n  margin-left: auto;\\r\\n  margin-right: auto;\\r\\n  padding: 10px 20px;\\r\\n  background-color: #aeeabc;\\r\\n  border-radius: 15px;\\r\\n  margin-bottom: 20px;\\r\\n  font-size: 12px;\\r\\n  opacity: 0;\\r\\n  animation: fadeIn 0.8s;\\r\\n  animation-fill-mode: forwards;\\r\\n}\\r\\n\\r\\n@keyframes fadeIn {\\r\\n  100% {\\r\\n    opacity: 1;\\r\\n  }\\r\\n}\\r\\n\\r\\n.hide {\\r\\n  display: none;\\r\\n}\\r\\n\\r\\n#scorecard {\\r\\n  height: 50px;\\r\\n  width: 50px;\\r\\n}\\r\\n\\r\\ninput {\\r\\n  width: 100%;\\r\\n  margin-bottom: 25px;\\r\\n  border: none;\\r\\n  background-color: #ededed;\\r\\n  padding: 10px;\\r\\n  border-radius: 15px;\\r\\n}\\r\\n\\r\\n#submit-btn {\\r\\n  padding: 8px 20px;\\r\\n  background-color: #1e0253;\\r\\n  color: #fff;\\r\\n  cursor: pointer;\\r\\n  border-radius: 15px;\\r\\n  border: none;\\r\\n  transition: 0.3s;\\r\\n}\\r\\n\\r\\n#submit-btn:hover {\\r\\n  background-color: #555;\\r\\n}\\r\\n\\r\\n/* Footer */\\r\\nfooter {\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  padding-right: 200px;\\r\\n  padding-left: 160px;\\r\\n  width: 100%;\\r\\n  text-align: center;\\r\\n  position: absolute;\\r\\n  bottom: 0;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-config/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_leaderboard_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/leaderboard.js */ \"./src/modules/leaderboard.js\");\n// Imports\r\n\r\n\r\n\r\n// Get relevant elements from the DOM\r\nconst form = document.querySelector('form');\r\nconst name = document.getElementById('name');\r\nconst score = document.getElementById('score');\r\nconst scores = document.getElementById('scores');\r\nconst refreshBtn = document.getElementById('refresh');\r\n\r\n// Call refresh function on page load to display leaderboard scores\r\n(0,_modules_leaderboard_js__WEBPACK_IMPORTED_MODULE_1__.refresh)();\r\n\r\n// Add event listener to form to call the save function with form input on submit\r\nform.addEventListener('submit', (e) => {\r\n  e.preventDefault();\r\n  (0,_modules_leaderboard_js__WEBPACK_IMPORTED_MODULE_1__.save)(name.value, score.value);\r\n  form.reset();\r\n});\r\n\r\n// Add event listener to refresh button to call the refresh function\r\nrefreshBtn.addEventListener('click', () => {\r\n  scores.innerHTML = '';\r\n  (0,_modules_leaderboard_js__WEBPACK_IMPORTED_MODULE_1__.refresh)();\r\n});\r\n\n\n//# sourceURL=webpack://webpack-config/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _images_score_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/score.png */ \"./src/images/score.png\");\n/* harmony import */ var _images_trophy_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/trophy.png */ \"./src/images/trophy.png\");\n/* harmony import */ var _modules_leaderboard_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/leaderboard.js */ \"./src/modules/leaderboard.js\");\n// Imports\n\n\n\n\n\n// Get relevant elements from the DOM\nconst form = document.querySelector('form');\nconst name = document.getElementById('name');\nconst score = document.getElementById('score');\nconst scores = document.getElementById('scores');\nconst refreshBtn = document.getElementById('refresh');\nconst success = document.getElementById('success');\nconst loader = document.getElementById('skeleton-loader');\nconst scoreCard = document.getElementById('scorecard');\nconst trophy = document.getElementById('trophy');\nconst empty = document.getElementById('empty-id');\n\n// Call refresh function on page load to display leaderboard scores\nscoreCard.src = _images_score_png__WEBPACK_IMPORTED_MODULE_1__;\ntrophy.src = _images_trophy_png__WEBPACK_IMPORTED_MODULE_2__;\nloader.classList.toggle('hide');\nempty.classList.replace('empty', 'hide');\n(0,_modules_leaderboard_js__WEBPACK_IMPORTED_MODULE_3__.refresh)();\n\n// Add event listener to form to call the save function with form input on submit\nform.addEventListener('submit', (e) => {\n  e.preventDefault();\n  (0,_modules_leaderboard_js__WEBPACK_IMPORTED_MODULE_3__.save)(name.value, score.value);\n  form.reset();\n  success.classList.toggle('hide');\n  setTimeout(() => {\n    success.classList.toggle('hide');\n  }, 2500);\n});\n\n// Add event listener to refresh button to call the refresh function\nrefreshBtn.addEventListener('click', () => {\n  refreshBtn.classList.toggle('down');\n  scores.innerHTML = '';\n  loader.classList.toggle('hide');\n  empty.classList.replace('empty', 'hide');\n  (0,_modules_leaderboard_js__WEBPACK_IMPORTED_MODULE_3__.refresh)();\n});\n\n\n//# sourceURL=webpack://webpack-config/./src/index.js?");
 
 /***/ }),
 
@@ -126,7 +126,67 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"refresh\": () => (/* binding */ refresh),\n/* harmony export */   \"save\": () => (/* binding */ save)\n/* harmony export */ });\n// Get relevant elements from the DOM\r\nconst scores = document.getElementById('scores');\r\n\r\n// URL to be used in fetch requests\r\nconst URL = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${\"vOchY2JbMpncBn8oJZe7\"}/scores/`;\r\n\r\n/*\r\nAsync function to fetch all scores from leaderboard API and sort in descending order.\r\nScores are then appended to the DOM\r\n*/\r\nconst refresh = async () => {\r\n  try {\r\n    const response = await fetch(URL);\r\n    if (response.ok) {\r\n      const json = await response.json();\r\n      const sortedScores = json.result.sort((s1, s2) => {\r\n        if (s1.score < s2.score) {\r\n          return 1;\r\n        }\r\n        if (s1.score > s2.score) {\r\n          return -1;\r\n        }\r\n\r\n        return 0;\r\n      });\r\n      sortedScores.forEach((item) => {\r\n        const scoreElement = document.createElement('p');\r\n        scoreElement.textContent = `${item.user}: ${item.score}`;\r\n        scores.appendChild(scoreElement);\r\n      });\r\n    }\r\n  } catch (error) {\r\n    throw new Error(error);\r\n  }\r\n};\r\n\r\n// Async function to send form data to leaderboard api\r\nconst save = async (user, score) => {\r\n  const data = JSON.stringify({\r\n    user,\r\n    score,\r\n  });\r\n\r\n  try {\r\n    await fetch(URL, {\r\n      method: 'POST',\r\n      headers: { 'Content-Type': 'application/json' },\r\n      body: data,\r\n    });\r\n  } catch (error) {\r\n    throw new Error(error);\r\n  }\r\n};\r\n\n\n//# sourceURL=webpack://webpack-config/./src/modules/leaderboard.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"refresh\": () => (/* binding */ refresh),\n/* harmony export */   \"save\": () => (/* binding */ save)\n/* harmony export */ });\n/* harmony import */ var _images_profile1_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/profile1.png */ \"./src/images/profile1.png\");\n/* harmony import */ var _images_profile2_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/profile2.png */ \"./src/images/profile2.png\");\n/* harmony import */ var _images_profile3_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/profile3.png */ \"./src/images/profile3.png\");\n/* harmony import */ var _images_profile4_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/profile4.png */ \"./src/images/profile4.png\");\n\n\n\n\n\n// Get relevant elements from the DOM\nconst scores = document.getElementById('scores');\nconst loader = document.getElementById('skeleton-loader');\nconst empty = document.getElementById('empty-id');\n\n// URL to be used in fetch requests\nconst URL = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${\"v9Sl1GSQcwW1ag9Vqb4P\"}/scores/`;\n\n// Array of profile images\nconst imageArr = [_images_profile1_png__WEBPACK_IMPORTED_MODULE_0__, _images_profile2_png__WEBPACK_IMPORTED_MODULE_1__, _images_profile3_png__WEBPACK_IMPORTED_MODULE_2__, _images_profile4_png__WEBPACK_IMPORTED_MODULE_3__];\n\n/*\nAsync function to fetch all scores from leaderboard API and sort in descending order.\nScores are then appended to the DOM\n*/\nconst refresh = async () => {\n  try {\n    const response = await fetch(URL);\n    if (response.ok) {\n      const json = await response.json();\n      if (!json.result.length) {\n        empty.classList.replace('hide', 'empty');\n      } else {\n        empty.classList.toggle('empty', 'hide');\n      }\n      let sortedScores = json.result.sort((s1, s2) => {\n        if (s1.score < s2.score) {\n          return 1;\n        }\n        if (s1.score > s2.score) {\n          return -1;\n        }\n\n        return 0;\n      });\n      loader.classList.toggle('hide');\n      let count = 0;\n      sortedScores = sortedScores.map((item) => {\n        count += 1;\n        return {\n          ...item,\n          rank: count,\n        };\n      });\n      sortedScores.forEach((item) => {\n        const scoreElem = document.createElement('div');\n        scoreElem.className = 'score';\n        scoreElem.innerHTML = `\n          <span>${item.rank}</span>\n          <img alt='profile' class='profile'/>\n          <p class=\"user\">${item.user}</p>\n          <p class=\"score-number\">${item.score}</p>\n        `;\n        scoreElem.children[1].src = imageArr[Math.floor(Math.random() * 4)];\n        scores.appendChild(scoreElem);\n      });\n    }\n  } catch (error) {\n    throw new Error(error);\n  }\n};\n\n// Async function to send form data to leaderboard api\nconst save = async (user, score) => {\n  const data = JSON.stringify({\n    user,\n    score,\n  });\n\n  try {\n    await fetch(URL, {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: data,\n    });\n  } catch (error) {\n    throw new Error(error);\n  }\n};\n\n\n//# sourceURL=webpack://webpack-config/./src/modules/leaderboard.js?");
+
+/***/ }),
+
+/***/ "./src/images/profile1.png":
+/*!*********************************!*\
+  !*** ./src/images/profile1.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"5faf09a7795d28bf5a2b.png\";\n\n//# sourceURL=webpack://webpack-config/./src/images/profile1.png?");
+
+/***/ }),
+
+/***/ "./src/images/profile2.png":
+/*!*********************************!*\
+  !*** ./src/images/profile2.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ba422ca13bb76ae93687.png\";\n\n//# sourceURL=webpack://webpack-config/./src/images/profile2.png?");
+
+/***/ }),
+
+/***/ "./src/images/profile3.png":
+/*!*********************************!*\
+  !*** ./src/images/profile3.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"7592b515db23ff41b4dc.png\";\n\n//# sourceURL=webpack://webpack-config/./src/images/profile3.png?");
+
+/***/ }),
+
+/***/ "./src/images/profile4.png":
+/*!*********************************!*\
+  !*** ./src/images/profile4.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"03961758fc894ce1fd2d.png\";\n\n//# sourceURL=webpack://webpack-config/./src/images/profile4.png?");
+
+/***/ }),
+
+/***/ "./src/images/score.png":
+/*!******************************!*\
+  !*** ./src/images/score.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"c81456c28f5fca64305a.png\";\n\n//# sourceURL=webpack://webpack-config/./src/images/score.png?");
+
+/***/ }),
+
+/***/ "./src/images/trophy.png":
+/*!*******************************!*\
+  !*** ./src/images/trophy.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"16e6df06d5ae2e4ee3f4.png\";\n\n//# sourceURL=webpack://webpack-config/./src/images/trophy.png?");
 
 /***/ })
 
@@ -181,6 +241,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -195,6 +267,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

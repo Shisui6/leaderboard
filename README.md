@@ -8,6 +8,10 @@
 - CSS
 - Javascript
 - Webpack
+
+## Live Demo
+
+![image](https://user-images.githubusercontent.com/37116322/202613459-5c5b308d-320c-49d5-a8bf-170745cc8dc8.png)
   
 ## Getting Started
 
